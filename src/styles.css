@@ -189,6 +189,25 @@ body { font-family: var(--font-body); }
   10% { opacity: 1; }
   100% { transform: translateY(-20vh) rotate(4deg); opacity: 0; }
 }
+@keyframes flame {
+  0% { transform: translateX(-50%) scaleY(1) scaleX(1) rotate(-2deg); }
+  100% { transform: translateX(-50%) scaleY(1.15) scaleX(0.9) rotate(2deg); }
+}
+@keyframes glow {
+  0%, 100% { opacity: 0.5; transform: translateX(-50%) scale(1); }
+  50% { opacity: 0.85; transform: translateX(-50%) scale(1.15); }
+}
+@keyframes smoke {
+  0% { transform: translate(0, 0) scale(0.6); opacity: 0.7; }
+  100% { transform: translate(var(--sx, 6px), -80px) scale(2); opacity: 0; }
+}
+@keyframes dash {
+  to { stroke-dashoffset: -200; }
+}
+@keyframes tilt {
+  0%, 100% { transform: perspective(1000px) rotateX(0) rotateY(0); }
+  50% { transform: perspective(1000px) rotateX(2deg) rotateY(-2deg); }
+}
 
 .font-display { font-family: var(--font-display); }
 .font-body { font-family: var(--font-body); }
