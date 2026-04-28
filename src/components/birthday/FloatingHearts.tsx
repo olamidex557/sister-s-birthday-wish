@@ -1,10 +1,14 @@
-import { useMemo } from "react";
+import { useEffect, useState } from "react";
 
-const HEARTS = ["💖", "💗", "💕", "✨", "🌸", "💜"];
+const HEARTS = ["💖", "💗", "💕", "✨", "🌸", "💜", "⭐"];
 
 export function FloatingHearts({ count = 18 }: { count?: number }) {
-  const items = useMemo(
-    () =>
+  const [items, setItems] = useState<
+    { id: number; left: number; delay: number; duration: number; size: number; drift: number; emoji: string }[]
+  >([]);
+
+  useEffect(() => {
+    setItems(
       Array.from({ length: count }).map((_, i) => ({
         id: i,
         left: Math.random() * 100,
@@ -14,8 +18,8 @@ export function FloatingHearts({ count = 18 }: { count?: number }) {
         drift: (Math.random() - 0.5) * 120,
         emoji: HEARTS[Math.floor(Math.random() * HEARTS.length)],
       })),
-    [count],
-  );
+    );
+  }, [count]);
 
   return (
     <div className="pointer-events-none absolute inset-0 overflow-hidden" aria-hidden="true">
