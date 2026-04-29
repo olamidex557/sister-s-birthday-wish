@@ -71,7 +71,7 @@ function Index() {
       <SlideshowSection />
       <ConstellationSection />
       <LetterSection />
-      <ScratchSection />
+      
       <CandleSection />
       <CelebrateSection />
       <SecretRevealSection />
