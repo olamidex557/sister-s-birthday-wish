@@ -13,6 +13,14 @@ import { ScratchReveal } from "@/components/birthday/ScratchReveal";
 import { CursorSparkles } from "@/components/birthday/CursorSparkles";
 import { Fireworks } from "@/components/birthday/Fireworks";
 
+import bakilis1 from "@/assets/bakilis-1.jpeg";
+import bakilis2 from "@/assets/bakilis-2.jpeg";
+import bakilis3 from "@/assets/bakilis-3.jpeg";
+import bakilis4 from "@/assets/bakilis-4.jpeg";
+import bakilis5 from "@/assets/bakilis-5.jpeg";
+import bakilis6 from "@/assets/bakilis-6.jpeg";
+import bakilis7 from "@/assets/bakilis-7.jpeg";
+
 export const Route = createFileRoute("/")({
   component: Index,
 });
@@ -21,30 +29,31 @@ export const Route = createFileRoute("/")({
 // 💛  EDIT YOUR CONTENT HERE
 // ─────────────────────────────────────────────────────────────
 const HER_NAME = "Bakilis";
-const HERO_SUBTEXT = "You make life brighter every single day.";
+const HERO_SUBTEXT = "The cousin who feels more like a sister — today the whole world gets to celebrate you.";
 
 const SLIDES: Slide[] = [
-  { src: "https://images.unsplash.com/photo-1530103862676-de8c9debad1d?w=1600&q=80", caption: "My favorite memory" },
-  { src: "https://images.unsplash.com/photo-1464349095431-e9a21285b5f3?w=1600&q=80", caption: "You always shine" },
-  { src: "https://images.unsplash.com/photo-1513151233558-d860c5398176?w=1600&q=80", caption: "Forever cheering for you" },
-  { src: "https://images.unsplash.com/photo-1492684223066-81342ee5ff30?w=1600&q=80", caption: "Sweetest soul I know" },
-  { src: "https://images.unsplash.com/photo-1520854221256-17451cc331bf?w=1600&q=80", caption: "Magic follows you" },
-  { src: "https://images.unsplash.com/photo-1496440737103-cd596325d314?w=1600&q=80", caption: "Here's to you ✨" },
+  { src: bakilis1, caption: "soft, radiant, you" },
+  { src: bakilis2, caption: "pretty in pink 💖" },
+  { src: bakilis7, caption: "that smile is everything" },
+  { src: bakilis4, caption: "elegance personified" },
+  { src: bakilis6, caption: "a whole vibe ✨" },
+  { src: bakilis3, caption: "art, framed" },
+  { src: bakilis5, caption: "queen energy 👑" },
 ];
 
 const MEMORIES: Memory[] = [
-  { src: SLIDES[0].src, title: "the laugh", note: "the one that makes everyone else laugh too." },
-  { src: SLIDES[1].src, title: "your light", note: "you walk into rooms and they get warmer." },
-  { src: SLIDES[2].src, title: "your dreams", note: "i'm cheering louder than anyone." },
-  { src: SLIDES[3].src, title: "your heart", note: "the softest, bravest thing i know." },
-  { src: SLIDES[4].src, title: "your magic", note: "ordinary days, extraordinary you." },
-  { src: SLIDES[5].src, title: "this year", note: "everything beautiful is on its way." },
+  { src: bakilis1, title: "your smile", note: "the one that makes a whole room exhale." },
+  { src: bakilis2, title: "your softness", note: "lace, laughter, and a heart of gold." },
+  { src: bakilis7, title: "your light", note: "you walk into rooms and they get warmer." },
+  { src: bakilis4, title: "your grace", note: "elegance you didn't have to study — it's just you." },
+  { src: bakilis6, title: "your dreams", note: "i'm cheering louder than anyone, cousin." },
+  { src: bakilis3, title: "your magic", note: "ordinary days, extraordinary you." },
 ];
 
 const LETTER_TEXT =
-  `Bakilis — today the world gets to celebrate the person I've already been celebrating my whole life. You're the kind of person who makes ordinary days feel a little softer, a little funnier, a little more like home. So today is for you. For your laugh, your heart, your dreams, and every beautiful thing still coming your way. I love you more than words.`;
+  `Bakilis — my cousin, my sister-in-spirit. Today the world gets to celebrate the girl I've been quietly celebrating my whole life. You're the kind of person who turns family into home, who makes the ordinary glow a little brighter just by being in it. From every shared laugh, every late-night talk, every "remember when" — you've been one of my favorite parts of growing up. So today is for you. For your smile that softens everything, for your dreams (which I'm always rooting for), and for the beautiful year unfolding ahead of you. I love you more than I say out loud. Happy birthday, cousin.`;
 
-const SECRET_MESSAGE = "you are my favorite person on earth.";
+const SECRET_MESSAGE = "you're not just my cousin — you're family of the heart. 💛";
 
 const MUSIC_URL =
   "https://cdn.pixabay.com/download/audio/2022/05/27/audio_1808fbf07a.mp3?filename=relaxing-mountains-rivers-streams-running-water-18178.mp3";
