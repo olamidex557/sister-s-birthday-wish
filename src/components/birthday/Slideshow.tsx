@@ -18,7 +18,7 @@ export function Slideshow({ slides }: { slides: Slide[] }) {
 
   return (
     <div
-      className="relative mx-auto aspect-[16/10] w-full max-w-5xl overflow-hidden rounded-3xl shadow-[0_30px_80px_-20px_color-mix(in_oklab,var(--plum)_35%,transparent)] ring-1 ring-rose/40"
+      className="relative mx-auto aspect-[4/5] w-full max-w-2xl overflow-hidden rounded-3xl shadow-[0_30px_80px_-20px_color-mix(in_oklab,var(--plum)_35%,transparent)] ring-1 ring-rose/40 md:aspect-[3/4]"
       onMouseEnter={() => setPaused(true)}
       onMouseLeave={() => setPaused(false)}
     >
@@ -30,14 +30,26 @@ export function Slideshow({ slides }: { slides: Slide[] }) {
           }`}
           aria-hidden={i !== index}
         >
+          {/* blurred backdrop fills the frame */}
+          <div
+            className="absolute inset-0 scale-110"
+            style={{
+              backgroundImage: `url(${s.src})`,
+              backgroundSize: "cover",
+              backgroundPosition: "center",
+              filter: "blur(40px) brightness(0.7) saturate(1.1)",
+            }}
+          />
+          <div className="absolute inset-0 bg-plum/20" />
+          {/* sharp foreground image, contained */}
           <img
             src={s.src}
             alt={s.caption}
-            className={`h-full w-full object-cover ${i === index ? "animate-ken-burns" : ""}`}
+            className={`relative h-full w-full object-contain ${i === index ? "animate-ken-burns" : ""}`}
             key={`${i}-${index === i ? "active" : "idle"}`}
             loading={i === 0 ? "eager" : "lazy"}
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-plum/60 via-transparent to-transparent" />
+          <div className="absolute inset-x-0 bottom-0 h-1/3 bg-gradient-to-t from-plum/80 via-plum/20 to-transparent" />
           <div className="absolute bottom-6 left-6 right-6 md:bottom-10 md:left-10">
             <p className="font-script text-3xl text-white drop-shadow-md md:text-5xl">
               {s.caption}
