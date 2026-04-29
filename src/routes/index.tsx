@@ -9,7 +9,7 @@ import { IntroDoor } from "@/components/birthday/IntroDoor";
 import { Candle } from "@/components/birthday/Candle";
 import { Constellation, type Memory } from "@/components/birthday/Constellation";
 import { Typewriter } from "@/components/birthday/Typewriter";
-import { ScratchReveal } from "@/components/birthday/ScratchReveal";
+
 import { CursorSparkles } from "@/components/birthday/CursorSparkles";
 import { Fireworks } from "@/components/birthday/Fireworks";
 import { SecretReveal } from "@/components/birthday/SecretReveal";
