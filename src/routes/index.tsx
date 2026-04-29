@@ -233,6 +233,16 @@ function CelebrateSection() {
   );
 }
 
+function SecretRevealSection() {
+  return (
+    <section className="relative px-6 py-24 md:py-28">
+      <div className="mx-auto max-w-3xl">
+        <SecretReveal message={SECRET_MESSAGE} />
+      </div>
+    </section>
+  );
+}
+
 function FinaleSection() {
   return (
     <section className="relative h-[80vh] w-full overflow-hidden bg-gradient-to-b from-plum via-[color-mix(in_oklab,var(--plum)_70%,black)] to-black">
