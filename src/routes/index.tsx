@@ -12,6 +12,7 @@ import { Typewriter } from "@/components/birthday/Typewriter";
 import { ScratchReveal } from "@/components/birthday/ScratchReveal";
 import { CursorSparkles } from "@/components/birthday/CursorSparkles";
 import { Fireworks } from "@/components/birthday/Fireworks";
+import { SecretReveal } from "@/components/birthday/SecretReveal";
 
 import bakilis1 from "@/assets/bakilis-1.jpeg";
 import bakilis2 from "@/assets/bakilis-2.jpeg";
@@ -73,6 +74,7 @@ function Index() {
       <ScratchSection />
       <CandleSection />
       <CelebrateSection />
+      <SecretRevealSection />
       <FinaleSection />
       <Footer />
       <MusicPlayer src={MUSIC_URL} />
