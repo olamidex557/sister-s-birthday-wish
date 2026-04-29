@@ -196,18 +196,6 @@ function LetterSection() {
   );
 }
 
-function ScratchSection() {
-  return (
-    <section className="relative px-6 py-20 md:py-28">
-      <div className="mx-auto max-w-2xl text-center">
-        <SectionHeader kicker="a tiny secret" title="Scratch to reveal" />
-        <ScratchReveal message={SECRET_MESSAGE} />
-        <p className="mt-4 text-xs uppercase tracking-[0.25em] text-foreground/50">drag your finger across</p>
-      </div>
-    </section>
-  );
-}
-
 function CandleSection() {
   return (
     <section className="relative overflow-hidden px-6 py-24 md:py-32">
