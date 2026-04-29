@@ -9,7 +9,7 @@ import { IntroDoor } from "@/components/birthday/IntroDoor";
 import { Candle } from "@/components/birthday/Candle";
 import { Constellation, type Memory } from "@/components/birthday/Constellation";
 import { Typewriter } from "@/components/birthday/Typewriter";
-import { ScratchReveal } from "@/components/birthday/ScratchReveal";
+
 import { CursorSparkles } from "@/components/birthday/CursorSparkles";
 import { Fireworks } from "@/components/birthday/Fireworks";
 import { SecretReveal } from "@/components/birthday/SecretReveal";
@@ -71,7 +71,7 @@ function Index() {
       <SlideshowSection />
       <ConstellationSection />
       <LetterSection />
-      <ScratchSection />
+      
       <CandleSection />
       <CelebrateSection />
       <SecretRevealSection />
@@ -191,18 +191,6 @@ function LetterSection() {
           />
           <p className="mt-10 text-right font-script text-3xl text-plum">— with all my love 💛</p>
         </div>
-      </div>
-    </section>
-  );
-}
-
-function ScratchSection() {
-  return (
-    <section className="relative px-6 py-20 md:py-28">
-      <div className="mx-auto max-w-2xl text-center">
-        <SectionHeader kicker="a tiny secret" title="Scratch to reveal" />
-        <ScratchReveal message={SECRET_MESSAGE} />
-        <p className="mt-4 text-xs uppercase tracking-[0.25em] text-foreground/50">drag your finger across</p>
       </div>
     </section>
   );
