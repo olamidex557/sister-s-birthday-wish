@@ -251,7 +251,7 @@ function Footer() {
     <footer className="relative bg-black px-6 pb-16 pt-12 text-center text-white/80">
       <div className="mx-auto h-px max-w-xs bg-gradient-to-r from-transparent via-gold/40 to-transparent" />
       <p className="mt-8 font-script text-2xl text-rose md:text-3xl">
-        Made with love by your sibling 💛
+        Made with love by your cousin 💛
       </p>
     </footer>
   );
